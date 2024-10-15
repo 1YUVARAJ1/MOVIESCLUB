@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>MOVIESCLUB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Righteous&family=Urbanist&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      font-family: 'Righteous', sans-serif;
+      
+    }
+    .heading {
+      font-weight: bold;
+      color: red;
+      font-size: 34px;
+      padding: 10px;
+    }
+    .shadow {
+      background-color: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+    .caption {
+      font-weight: bold;
+    }
+    .figure-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 18px;
+    }
+ 
+    figure {
+      text-align: center;
+    }
+ 
+    button {
+      border: 2px;
+      border-radius: 6px;
+      padding: 5px;
+      margin: 24px;
+      background: red;
+      cursor: pointer;
+      font-family: 'Urbanist', sans-serif;
+      font-size: 18px; 
+      color: white;
+      
+    }
+ 
+    
+    figcaption {
+      font-size: 18px;
+      margin-top: 8px;
+      color: red;
+    }
+    body {
+      font-family: 'Urbanist', sans-serif; 
+      font-weight: bold;
+    }
+     iframe, frame {
+      border: none;
+      width: 350px;
+      height: 210px;
+    }
+    #about,#contact{
+color: #fff;
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+    }
+   
+  </style>
+</head>
+ 
+<body>
+  <header class="shadow">
+    <div class="heading"> MOVIESCLUB </div>  
+    <div id="navigation">
+      <a style=" text-decoration: none; padding: 34px;font-size: 20px;color: #fff;font-family: 'Urbanist', sans-serif; font-weight: bold;"href="#home">Home</a>
+      <a style=" text-decoration: none; padding: 34px;font-size: 20px;color: #fff;font-family: 'Urbanist', sans-serif; font-weight: bold;"href="#contact">Contact</a>
+      <a style=" text-decoration: none; padding: 34px;font-size: 20px;color: #fff;font-family: 'Urbanist', sans-serif; font-weight: bold;"href="#about">About</a>
+    </div>
+  </header> <br>
+  
+<div id="content">
+    <div id= "home">
+      <div style="display: flex; justify-content: flex-start">
+        <button class="shadow" onclick="sortFigures('te')"id="">Tamil</button>
+        <button class="shadow" onclick="sortFigures('en')"id="">english</button>
+        <button class="shadow" id="sortButton">Sort a-z</button>
+      </div>
+ 
+      <div class="figure-container" id="figures-container">
+        <figure   id="figure1" class="figure" lang="en">
+        <iframe class="shadow" src="https://www.youtube.com/embed/d9MyW72ELq0?si=mIl0gyWTijaf4EPf" title="Avatar: The Way of Water | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>Avatar: The Way of Water</figcaption>
+        </figure>
+        <figure  id="figure2" class="figure" lang="te">
+        <iframe class="shadow" src="https://www.youtube.com/embed/ShsFxGV_thk?si=XeadgOgJ2Qdq5JKN" title="Leo | Official Tamil Trailer | Thalapathy Vijay, Lokesh Kanagaraj, Trisha Krishnan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>LEO</figcaption>
+        </figure>
+        <figure  id="figure3" class="figure" lang="te">
+       <iframe class="shadow" src="https://www.youtube.com/embed/OKBMCL-frPU?si=x-OoZ02Ppjtlr1YS" title="VIKRAM - Official Trailer | Kamal Haasan | VijaySethupathi, FahadhFaasil | LokeshKanagaraj | Anirudh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <figcaption>VIKRAM</figcaption>
+        </figure>
+       <figure id="figure4" class="figure" lang="en">
+       <iframe class="shadow"src="https://www.youtube.com/embed/DMOBlEcRuw8?si=QejJXT2whXu3NfSO" title="The Pursuit of Happyness (2006) Official Trailer 1 - Will Smith Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <figcaption>The Pursuit of Happyness (2006)</figcaption>
+       </figure>
+       <figure  id="figure5" class="figure" lang="te">
+       <iframe class="shadow"src="https://www.youtube.com/embed/ikbXIYXG1ow?si=2GsgZg1t1rjUD4Ko" title="7 Aum Arivu Official Trailer in HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>7 Aum Arivu</figcaption>
+       </figure>
+        <figure id="figure6" class="figure" lang="en">
+        <iframe class="shadow"  src="https://www.youtube.com/embed/nbp3Ra3Yp74" title="THE AMAZING SPIDER-MAN 2 - Official Trailer (HD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>Amazing spiderman 2</figcaption>
+       </figure>  
+        <figure id="figure7" class="figure" lang="en">
+        <iframe class="shadow"  src="https://www.youtube.com/embed/dKrVegVI0Us" title="Marvel&#39;s Captain America: Civil War - Trailer 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>captain America: Civil War</figcaption>
+       </figure>  
+        <figure id="figure8" class="figure" lang="te">
+         <iframe class="shadow" src="https://www.youtube.com/embed/r5Lih8rKd6k?si=gSY86UnEWX6p5z6r" title="Thani Oruvan - Official Trailer | Jayam Ravi, Nayanthara, Arvind Swamy | M. Raja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <figcaption>Thani Oruvan</figcaption>
+         </figure>
+         <figure id="figure9" class="figure" lang="te">
+        <iframe class="shadow" src="https://www.youtube.com/embed/GSKeirZ6_Cg?si=89gidXc2_NHlBY9I" title="Paiyaa Tamil Movie - Trailer | Karthi, Tamannaah, Jagan | Yuvan Shankar Raja | HD 1080p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <figcaption>Paiyaa </figcaption>
+         </figure>
+      </div>
+</div>
+  
+  
+<div style="padding : 20px;" id="contact">
+  <h2>Contact Us – Unleash the Power of Communication!</h2>
+  <p>Have burning questions, blockbuster suggestions, or just want to share your cinematic musings? Fear not, dear movie aficionado, for reaching out to us is as thrilling as the climax of an epic film!</p>
+ 
+  <p>Prepare to unleash the power of communication by dropping us an electrifying email at <a href="mailto:moviesclub15@gmail.com ">moviesclub15@gmail.com </a>. Our virtual doors are always open, ready to receive your digital missives filled with the passion and excitement that only true cinephiles possess!</p>
+ 
+  <p>Need a swift response? Fear not, for our email portals are manned by a team of digital messengers who traverse the cinematic landscape at lightning speed. Your inquiries will be met with the urgency and importance befitting the climax of a summer blockbuster!</p>
+ 
+  <p>Whether you're seeking exclusive insights, proposing a collaboration of epic proportions, or simply want to express your undying love for a particular trailer, our inbox is the stage where your words take center screen!</p>
+ 
+  <p>Remember, at Cinema, every email is a script waiting to unfold, and every interaction is a plot twist in the grand narrative of our cinematic journey. So, seize the opportunity, ignite your creativity, and let the cinematic conversations begin!</p>
+ 
+  <p>Drop us a line at <a  href="mailto:moviesclub15@gmail.com ">moviesclub15@gmail.com </a> and let the cinematic symphony of communication commence!</p>
+ 
+</div>
+ 
+ 
+  <div style="padding : 20px;" id="about">
+  <h2>Embark on a Cinematic Odyssey!</h2>
+  <p>Welcome to the heart of movie magic – Cinema, where every frame pulsates with the electrifying energy of blockbuster trailers! Brace yourself for an unparalleled journey through the realms of Hollywood spectacles and Tamil epics.</p>
+ 
+  <p>At Cinema, we don't just offer trailers; we deliver an adrenaline-fueled extravaganza, a symphony of visual delights that will leave you on the edge of your seat, craving for more! Our collection is a carefully orchestrated fusion of Tamil grandeur and Hollywood's jaw-dropping escapades.</p>
+ 
+  <p>Immerse yourself in a whirlwind of emotions as our handpicked trailers transport you from the gravity-defying heroics of Hollywood's iconic figures to the soul-stirring sagas of Tamil cinema's finest. Each trailer is a cinematic symphony, a crescendo of action, drama, and pure unadulterated entertainment!</p>
+ 
+  <p>Prepare to be spellbound as you navigate through our meticulously categorized trailers, where the explosive energy of Tamil storytelling collides with the unmatched allure of Hollywood's visual spectacle. Whether you're a thrill-seeker or a connoisseur of emotional narratives, Cinema caters to your insatiable appetite for cinematic brilliance.</p>
+ 
+  <p>Embark on a cinematic odyssey like never before. Engulf yourself in the larger-than-life world of movie trailers, meticulously sorted by language to ensure you find the perfect trailer to satiate your craving for the extraordinary.</p>
+ 
+  <p>Cinema isn't just a platform; it's a theatrical experience, a front-row ticket to the grandeur of the silver screen. Join us in celebrating the magic of movies, where every click is an applause, and every trailer is a standing ovation!</p>
+ 
+  </div>
+</div>
+  
+  <script>
+  // Function to show the selected page and hide others
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('#content > div');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+        }
+ 
+        // Add click event listeners to navigation links
+        const links = document.querySelectorAll('#navigation a');
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                showPage(link.getAttribute('href').substring(1));
+            });
+        });
+ 
+        // Initially show the first page
+        showPage('home'); 
+ 
+  // Function to sort figures alphabetically
+    function sortFiguresAlphabetically() {
+      const container = document.querySelector('.figure-container');
+      const figures = Array.from(container.querySelectorAll('figure'));
+ 
+      // Sort the figures based on the text content of figcaptions
+      figures.sort((a, b) => {
+        const textA = a.querySelector('figcaption').textContent;
+        const textB = b.querySelector('figcaption').textContent;
+        return textA.localeCompare(textB);
+      });
+ 
+      // Remove all figures from the container
+      figures.forEach(figure => {
+        container.removeChild(figure);
+      });
+ 
+      // Append the sorted figures back to the container
+      figures.forEach(figure => {
+        container.appendChild(figure);
+      });
+    }
+ 
+    // Add an event listener to the button to trigger the sorting
+    document.getElementById('sortButton').addEventListener('click', sortFiguresAlphabetically);
+  
+ 
+   function sortFigures(language) {
+    // Get all figures
+    var figuresContainer = document.getElementById('figures-container');
+    var figures = Array.from(figuresContainer.getElementsByClassName('figure'));
+ 
+    // Filter figures based on the selected language
+    var filteredFigures = figures.filter(function (figure) {
+      return figure.getAttribute('lang') === language;
+    });
+ 
+    // Clear the container
+    figuresContainer.innerHTML = '';
+ 
+    // Append the filtered figures back to the container
+    filteredFigures.forEach(function (figure) {
+      figuresContainer.appendChild(figure);
+    });
+  } 
+ 
+  
+  </script>
+</body>
+ 
+</html>
